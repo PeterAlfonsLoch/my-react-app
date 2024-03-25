@@ -1,0 +1,12 @@
+// call ex4.yaml with node_version input as 20
+
+name: reuse workflow ex4
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-npm-thing:
+    uses: workspaces/my-react-app/.github/workflows/ex4.yaml
+    with:
+      node_version: 20
