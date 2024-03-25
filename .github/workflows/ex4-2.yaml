@@ -4,6 +4,6 @@ on:
 
 jobs:
   run-npm-thing:
-    uses: workspaces/my-react-app/.github/workflows/ex4.yaml
+    uses: PeterAlfonsLoch/my-react-app/.github/workflows/ex4.yaml@main
     with:
       node_version: 20
