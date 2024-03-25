@@ -1,7 +1,4 @@
-// call ex4.yaml with node_version input as 20
-
 name: reuse workflow ex4
-
 on:
   workflow_dispatch:
 
