@@ -22,6 +22,6 @@ jobs:
           -d '{"title":"Found a bug","body":"I'\''m having a problem with this.","labels":["bug"]}'
       - name: get SHA
         id: get_sha
-        run: echo "::set-output name=sha_short::$(echo ${GITHUB_SHA::7})"
+        run: echo "sha_short=${GITHUB_SHA::7}" >> $GITHUB_ENV
       - name: print SHA
         run: echo "SHA: ${{ steps.get_sha.outputs.sha_short }}"
